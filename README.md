@@ -59,13 +59,4 @@ This is a simple food delivery web application built using Python with Flask fra
 5. **Payment**: At checkout, users can choose between online payment or cash payment. Upon selection, a delivery confirmation message is displayed.
 
 ## Screenshots
-
-
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
+Screenshots of the web page are there in Flask-Order files named as pages.
