@@ -22,13 +22,13 @@ This is a simple food delivery web application built using Python with Flask fra
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your_username/food-delivery-app.git
+    git clone https://github.com/aneela1516/Flask-Order.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd food-delivery-app
+    cd Flask-Order
     ```
 
 3. Install the required dependencies:
@@ -40,6 +40,7 @@ This is a simple food delivery web application built using Python with Flask fra
 4. Run the Flask application:
 
     ```bash
+    cd fooddelivery
     python app.py
     ```
 
