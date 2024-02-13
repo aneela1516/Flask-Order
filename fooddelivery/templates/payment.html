@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container3">
+        <h1>Payment</h1>
+        <h2>Please select your payment method:</h2>
+        <div class="button-container">
+            <button onclick="payWithCash()"  style="font-size: 16px; padding: 10px 20px;">Cash Payment</button>
+            <button onclick="payOnline()"  style="font-size: 16px; padding: 10px 20px;">Online Payment</button>
+        </div>
+    </div>
+    <script>
+        function payWithCash() {
+            alert("You have selected cash payment. Delivering to your place...");
+            // Implement logic for cash payment and delivery
+        }
+
+        function payOnline() {
+            alert("You have selected online payment. Redirecting to payment gateway...");
+            // Implement logic for online payment
+        }
+    </script>
+</body>
+</html>

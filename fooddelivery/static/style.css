@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6e0b5;
+}
+
+.container1 {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3c6bc8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+
+}
+
+.container {
+    max-width: 950px;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9c6fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container3 {
+    max-width: 950px;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #8eb7ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cart {
+    position: 10px;
+    top: 50px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #b6fde7;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 98%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.dashboard-content img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.button-container{
+    text-align: center;
+}
+.item-details{
+    margin-left: 50px; /* Adjust as needed */
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+

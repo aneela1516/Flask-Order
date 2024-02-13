@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD DELIVERY</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}!</h1>
+        <div class="dashboard-content">
+            <h2>Menu</h2>
+            <ul id="available-items">
+                {% for item in food_items %}
+                <li>
+                    <div>
+                        <img src="{{ item.image }}" alt="{{ item.name }}">
+                        <div class="item-details">
+                            <h3>{{ item.name }}</h3>
+                            <p>Price: ${{ item.price }}</p>
+                        </div>
+                        <button onclick="addToCart('{{ item.name }}', '{{ item.price }}')">Add to Cart</button>
+                    </div>   
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        
+        <!-- Calculate Total Button -->
+        <button onclick="calculateTotal()">Calculate Total</button>
+        
+        <!-- Total Price Display -->
+        <p id="total-price"></p>
+
+        <!-- Checkout Button -->
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        function addToCart(name, price) {
+            // Implement adding to cart functionality here
+            alert('Added ' + name + ' to cart. Price: $' + price);
+            var cartItems = document.getElementById("cart-items");
+            var li = document.createElement("li");
+            li.textContent = name + " - $" + price;
+            cartItems.appendChild(li);
+        }
+
+        function calculateTotal() {
+            var cartItems = document.getElementById("cart-items").getElementsByTagName("li");
+            var totalPrice = 0;
+            for (var i = 0; i < cartItems.length; i++) {
+                var itemPrice = parseFloat(cartItems[i].textContent.split("$")[1]);
+                totalPrice += itemPrice;
+            }
+            document.getElementById("total-price").textContent = "Total Price: $" + totalPrice.toFixed(2);
+        }
+
+        function checkout() {
+            // Implement checkout functionality here
+            alert("Proceeding to checkout...");
+            window.location.href = "/payment";
+            // You can redirect the user to the checkout page or perform any other action here
+        }
+    </script>
+</body>
+</html>
+
+
+
+
