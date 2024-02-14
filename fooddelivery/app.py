@@ -23,7 +23,7 @@ def initialize_database():
 
 initialize_database()
 
-# Dummy user data (replace this with database queries in a real application)
+
 def authenticate_user(username, password):
     conn = sqlite3.connect(DB_FILE)
     cursor = conn.cursor()
@@ -64,7 +64,7 @@ def login():
 
 @app.route('/dashboard/<username>')
 def dashboard(username):
-    # Load food items from the database or another data source
+    
     food_items = [
         {'name': 'Burger', 'price': 10, 'image': '/static/burger.jpg'},
         {'name': 'Pizza', 'price': 12, 'image': '/static/pizza.jpg'},
@@ -89,8 +89,8 @@ def register():
             create_user(username, password)
             return redirect(url_for('dashboard', username=username))  # Redirect to dashboard page after successful registration
     else:
-        # Handle other request methods, such as GET
-        return redirect(url_for('index'))  # Redirect to index page if method is not allowed
+
+        return redirect(url_for('index'))  # Redirect to index page if not allowed
 
 if __name__ == '__main__':
     app.run(debug=True)
